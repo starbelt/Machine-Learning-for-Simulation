@@ -14,7 +14,7 @@ class Neuron(Trainable):
   Represents a single neuron with a vector of Scalar weight parameters and a
   Scalar bias parameter. Activation string options: None, 'tanh', 'relu'
   """
-  def __init__(self, num_i, activation:str=None):
+  def __init__(self, num_i, activation:str='None'):
     """
     Neuron constructor
     """
