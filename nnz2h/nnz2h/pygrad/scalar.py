@@ -211,3 +211,13 @@ class Scalar:
     # accumulate gradients via back-propagation
     for v in reversed(topo):
       v._acc_grads()
+
+  def  log(self):
+    """
+    Calculates natrual log with automatic gradient tracking
+    """
+    out = Scalar(math.log(self.value), _srcs=(self,), _op='log', _id=self._id+'log')
+    def _acc_grads():
+      self.grad += (1.0 / self.value) * out.grad # derivative of ln
+    out._acc_grads = _acc_grads
+    return out

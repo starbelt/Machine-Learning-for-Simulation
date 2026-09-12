@@ -33,9 +33,12 @@ class Neuron(Trainable):
 
   def __call__(self, x):
     """
-    Callable instance of Neuron object
+    Callable instance of Neuron object, existence for both tensor and singular value neurons
     """
-    out = sum((wi*xi for wi,xi in zip(self.w,x)),self.b)
+    if isinstance(x,(list,tuple)):
+      out = sum((wi*xi for wi,xi in zip(self.w,x)),self.b)
+    else:
+      out = self.w[x] + self.b
     return self.act(out) if self.act.__name__!='None' else out
 
   def parameters(self):
