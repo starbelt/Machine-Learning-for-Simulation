@@ -1,0 +1,129 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{times}
+\usepackage{xspace}
+
+% Set title and section font size to 12pt
+\usepackage{sectsty}
+\sectionfont{\fontsize{12}{15}\selectfont}
+\subsectionfont{\fontsize{12}{15}\selectfont}
+\subsubsectionfont{\fontsize{12}{15}\selectfont}
+
+% Reduce section header spacing
+\usepackage[explicit,noindentafter]{titlesec}
+\titlespacing\section{0pt}{6pt plus 2pt minus 2pt}{6pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{6pt plus 2pt minus 2pt}{6pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{6pt plus 2pt minus 2pt}{6pt plus 2pt minus 2pt}
+%{left spacing}{before spacing}{after spacing}
+% How to read {12pt plus 4pt minus 2pt}:
+% 12pt is the desired spacing
+% plus 4pt means that TeX can stretch it by at most 4pt
+% minus 2pt means that TeX can shrink it by at most 2pt
+
+\DeclareSIUnit\watthour{Wh}
+
+% Adjust title font size
+\makeatletter
+\renewcommand{\@maketitle}{
+  \begin{center}
+    {\fontsize{12}{15}\bfseries\@title\par}
+    %\vskip 1em
+    \vspace{2mm}
+    {\fontsize{12}{15}\@author\par}
+    \vskip 1em
+    {\fontsize{11}{15}\@date\par}
+  \end{center}
+}
+\makeatother
+
+\title{
+ Undergraduate Research in
+AI/ML for Aerospace Systems
+}
+\author{Anthony Semak $|$ Ugrad Student $|$ Fall 2026}
+
+\begin{document}
+
+\date{\vspace{-4ex}}
+%\date{}  % Toggle commenting to test
+
+\maketitle
+\vspace{2.5mm}
+
+\section*{Overview}
+
+Using Andrej Karpathy's "Zero to Hero" playlist, develop jupiter notebooks
+covering the contents of the video. Use the videos to design a small
+action language model (SAM) to optimize a simulation based on extraction
+and pick ups modelling several AOE vehicles for time optimization.
+
+\section*{Preliminary Schedule}
+
+\begin{center}
+\scriptsize
+\begin{tabular}{c|c|c}
+	Week & Research Schedule & Important Dates \\
+	\hline
+	\multirow{2}{*}{FA01 (Aug 19)} & Set up research credit & \\
+  	                             & 4994 Syllabus & \\
+	\hline
+	\multirow{2}{*}{FA02 (Aug 26)} & Set up Linux connection and notebook \\
+  	                             & Connect Starbelt WSL remote host \\
+	\hline
+	\multirow{2}{*}{FA03 (Sep 02)} & A short description of the weekly task & \\
+  	                             & The deliverable(s) for the week & \\
+	\hline
+	\multirow{2}{*}{FA04 (Sep 09)} & Continue jupiternotebooks of zero to hero  \\
+  	                             & proofread 01, then develop 02 code and writing \\
+	\hline
+	\multirow{2}{*}{FA05 (Sep 16)} & Continue jupiternotebooks of zero to hero & \\
+  	                             & develop 03 04 & \\
+	\hline
+	\multirow{2}{*}{FA06 (Sep 23)} & Continue jupiter notebooks of zero to hero & \\
+  	                             & develop 05 06 07 08& \\
+	\hline
+	\multirow{2}{*}{FA07 (Oct 07)} & Continue jupiter notebooks of zero to hero & \\
+  	                             & develop 09 10 11(makemore done) & \\
+	\hline
+	\multirow{2}{*}{FA08 (Oct 14)} & Continue jupiter notebooks of zero to hero & \\
+  	                             & Incorporation with Julia& \\
+	\hline
+	\multirow{2}{*}{FA09 (Oct 18)} & Continue jupiter notebooks of zero to hero \\
+  	                             &  \\
+	\hline
+	\multirow{2}{*}{FA10 (Oct 25)} & End milestone 2 & \\
+  	                             & Slides, written summary & \\
+	\hline
+	\multirow{2}{*}{FA11 (Nov 01)} & A short description of the weekly task & \\
+  	                             & The deliverable(s) for the week & \\
+	\hline
+	\multirow{2}{*}{FA12 (Nov 08)} & A short description of the weekly task & DD Mon: Conference name \\
+  	                             & The deliverable(s) for the week & Description of what is due \\
+	\hline
+	\multirow{2}{*}{FA13 (Nov 15)} & A short description of the weekly task & \\
+  	                             & The deliverable(s) for the week & \\
+	\hline
+	\multirow{2}{*}{FATB (Nov 22)} & A short description of the weekly task & \\
+  	                             & Thanksgiving break & \\
+	\hline
+	\multirow{2}{*}{FA14 (Nov 29)} & A short description of the weekly task & \\
+  	                             & The deliverable(s) for the week & \\
+	\hline
+	\multirow{2}{*}{FA15 (Dec 06)} & End milestone 3 & \\
+  	                             & Slides, written summary & \\
+	\hline
+	\multirow{2}{*}{FA16 (Dec 13)} & A short description of the weekly task & \\
+  	                             & The deliverable(s) for the week & \\
+	\hline
+	\multirow{2}{*}{GR17 (Dec 20)} & A short description of the weekly task & \\
+  	                             & The deliverable(s) for the week & \\
+\end{tabular}
+\end{center}
+
+\end{document}
